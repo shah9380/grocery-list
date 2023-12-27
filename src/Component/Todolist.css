@@ -1,0 +1,117 @@
+/* src/TodoList.css */
+
+body {
+    font-family: 'sans-serif';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddbfca;
+  }
+  
+  #todo-container {
+    background: rgb(47,41,142);
+    background: linear-gradient(90deg, rgba(47,41,142,1) 0%, rgba(9,81,121,1) 48%, rgba(0,212,255,1) 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 550px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #b3cd1e;
+  }
+  
+  .notification-bar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .notification {
+    background-color: #88bb93;
+    color: #be1111;
+    width:200px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .progress-bar {
+    height: 10px;
+    width: 100%;
+    background-color: #1e334a;
+    border-radius: 4px;
+    margin-top: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar-inner {
+    height: 100%;
+    background-color: #214399;
+    border-radius: 4px;
+    transition: width 0.1s linear;
+  }
+
+  .input{
+    padding:10px;
+    outline: none;
+    border-radius: 4px;
+    border:none;
+    background-color: light rgb(214, 49, 49);
+  }
+  .add-btn{
+    padding: 10px;
+    background-color: #43061c;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 40px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border: 2px solid black;
+    border-radius: 4px;
+    color: white;
+    font-size: 20px;
+    background-color: #8087a7;
+  }
+  
+  .checkbox {
+    margin-right: 8px;
+  }
+  
+  .delete {
+    margin-left: 8px;
+    padding: 8px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete:hover {
+    background-color: #26080b;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    color: #3a4956;
+  }
+  
